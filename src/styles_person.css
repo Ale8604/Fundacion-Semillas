@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #15171A;
+}
+
+.contenedor-padre {
+    margin: auto;
+    width: 100vw;
+    max-width: 2227px;
+    height: 100vh;
+    display: grid;
+    grid-gap: 2vmin;
+    grid-template-columns: 1.3fr 2fr 1.3fr;
+    grid-template-rows: 1.3fr 1fr 1fr;
+    grid-template-areas: "nombre progreso listado" 
+                        "nombre porcentaje listado"
+                        "nombre estado listado";
+}
+
+.contenedor-padre .progreso,
+.contenedor-padre .porcentaje,
+.contenedor-padre .estado,
+.contenedor-padre .listado,
+.progreso > div {
+    border-radius: 3vmin;
+    background-color: #202528;
+}
+
+.contenedor-padre .nombre {
+    background-color: #202528;
+    grid-area: nombre;
+
+}
+
+.contenedor-padre .estado {
+    background-color: #c91398;
+    grid-area: estado;
+    margin-bottom: 1.5vmin;
+
+}
+
+.contenedor-padre .progreso {
+    background-color: #1319c9;
+    margin-top: 1.5vmin;
+    grid-area: progreso;
+}
+
+.contenedor-padre .porcentaje {
+    background-color: #13c99b;
+    grid-area: porcentaje;
+}
+
+.contenedor-padre .listado {
+    background-color: #c91313;
+    margin-bottom: 1.5vmin;
+    grid-area: listado;
+    margin-right: 1.5vmin;
+}
+
+@media (max-width:800px){
+    .contenedor-padre {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: "nombre " 
+                            "progreso"
+                            "porcentaje"
+                            "estado"
+                            "listado";
+    }
+}

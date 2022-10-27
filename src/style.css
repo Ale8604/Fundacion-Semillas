@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #15171A;
+}
+
+
+/*---------------- SECCION 2 - NOTIFICACIONES Y MOOD ----------------*/
+
+.contenedor-notificaciones {
+    height: ;
+}
+
+@media (max-width:800px){
+    
+
+
+}
