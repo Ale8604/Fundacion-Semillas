@@ -1,0 +1,149 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #15171A;
+}
+.sec3{
+    margin: 0px 10px;
+}
+.sec3 h2{
+    text-transform: uppercase;
+    font-size:15px;
+    color: #fff;
+}
+/*----------------caja padre de los div de la clase listado------------------*/
+.listado{
+    margin: 20px auto;
+    background-color: #202528;
+    box-shadow: 15px 15px 15px rgb(15, 15, 15);
+    border-radius: 20px;
+    border-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/*---------------encabezado h3------------------*/
+.titulos{
+   margin: 20px auto;
+    color: aliceblue;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+/* ---------div con clase nombres y dandole estilos a los parrafos que se encuentran en ellas------*/
+.nombres p{
+    color: aliceblue;
+    margin: 7px auto;
+    text-align: center;
+}
+/*-----------------------contenedor de la clase numeros de los alumnos---------------*/
+.numeros{
+    display: none;
+}
+
+.numeros p{
+    color: #fff;
+    margin: 7px auto;
+    text-align: center;
+} 
+/*------clase de los detalles de estudiantes-----------*/
+.detalles{
+    margin-top: 60px;
+}
+.detalles p{
+    margin: 6px auto;
+  
+
+}
+.detalles a { 
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*-----footerrrr--------------*/
+
+.footer-pagina{
+    margin: 0px 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    background-color: #202528;
+   
+}
+
+.logo-footer{
+    
+    display: flex;
+   
+}
+
+.logo-footer p{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    line-height: 60px;
+
+}
+.logo-footer img{
+    width: 60px;
+    height: 60px;
+}
+.textos{
+    margin-left: 50px;
+    color: #fff;
+    font-size: 10px;
+   line-height: 60px;
+}
+
+/*----------medidas para celulares----------------*/
+@media (max-width:800px){
+    .textos{
+        margin-left: 10rem;
+        position: relative;
+        bottom: 60px;
+        font-size: 5px;
+        font-weight: 900;
+     
+    }
+
+.logo-footer img{
+    width: 30px;
+    height:30px;
+    position: relative;
+    top: 14px;
+    right: 8px;
+
+    
+}
+.logo-footer p{
+    font-size: 10px;
+    margin-right: 14rem;
+
+
+}
+.footer-pagina{
+    margin: 0px 30px;
+}
+
+.footer-pagina{
+    height: 50px;
+}
+}
+
+@media (min-width:650px){
+
+    .numeros{
+        display: inline;
+    }
+}
+
+   
+   
+   
