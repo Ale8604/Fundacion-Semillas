@@ -57,7 +57,8 @@ p {
 }
 
 .cont-1__img h3,
-.cont-1__grafico h3 {
+.cont-1__grafico h3, 
+.cont-5__grafico h3 {
     text-align: center;
     margin-top: 3vmin;
 }
@@ -91,8 +92,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 13vmin;
     aspect-ratio: 1;
+    background-color: #6681E2;
+    position: relative;
 }
 
 .grafico p {
@@ -101,8 +104,6 @@ p {
 }
 
 .circle-wrap {
-    top: 10%;
-    left: 20%;
     position: absolute;
     width: 15vmin;
     height: 15vmin;
@@ -140,14 +141,13 @@ p {
 }
 
 /* color animation */
-
 .mask .fill-1 {
     clip: rect(0px, 7.5vmin, 15vmin, 0px);
     background-color: #298907;
 }
 
-.mask.full-1,
-.circle .fill-1 {
+.cont-1 .mask.full-1,
+.cont-1 .circle .fill-1 {
     animation: fill-1 ease-in-out 3s;
     transform: rotate(90deg);
 }
@@ -383,3 +383,26 @@ p {
     }
 }
 
+.cont-5__grafico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vmin;
+}
+
+/* color animation */
+.cont-5 .mask.full-1,
+.cont-5 .circle .fill-1 {
+    animation: fill-5 ease-in-out 3s;
+    transform: rotate(36deg);
+}
+
+@keyframes fill-5 {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(36deg);
+    }
+}
