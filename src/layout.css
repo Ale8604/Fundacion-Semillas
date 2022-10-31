@@ -9,7 +9,8 @@ body{
     background-color: #15171A;
 }
 .sec3{
-    margin: 0px 10px;
+    margin: 0px 15px;
+    width: 700px;
 }
 .sec3 h2{
     text-transform: uppercase;
@@ -18,7 +19,7 @@ body{
 }
 /*----------------caja padre de los div de la clase listado------------------*/
 .listado{
-    margin: 20px auto;
+    margin: 40px auto;
     background-color: #202528;
     box-shadow: 15px 15px 15px rgb(15, 15, 15);
     border-radius: 20px;
@@ -37,7 +38,7 @@ body{
 /* ---------div con clase nombres y dandole estilos a los parrafos que se encuentran en ellas------*/
 .nombres p{
     color: aliceblue;
-    margin: 7px auto;
+    margin: 15px auto;
     text-align: center;
    text-align: justify;
 }
@@ -48,7 +49,7 @@ body{
 
 .numeros p{
     color: #fff;
-    margin: 7px auto;
+    margin: 15px auto;
     text-align: center;
 } 
 /*------clase de los detalles de estudiantes-----------*/
@@ -56,7 +57,7 @@ body{
     margin-top: 60px;
 }
 .detalles p{
-    margin: 6px auto;
+    margin: 13px auto;
   
 
 }
@@ -68,13 +69,13 @@ body{
 /*-----footerrrr--------------*/
 
 .footer-pagina{
-    margin: 0px 40px;
+    margin: 0px 20px;
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: auto;
-    width: auto;
+    width: 97%;
+    height: 100%;
     background-color: #202528;
    
 }
@@ -82,7 +83,7 @@ body{
 .logo-footer{
     
     display: flex;
-   
+    
 }
 
 .logo-footer p{
@@ -90,7 +91,7 @@ body{
     color: #fff;
     font-size: 15px;
     line-height: 60px;
-
+    
 }
 .logo-footer img{
     width: 60px;
@@ -100,10 +101,26 @@ body{
     margin-left: 50px;
     color: #fff;
     font-size: 10px;
-   line-height: 60px;
+    line-height: 60px;
 }
 
 /*----------medidas para celulares----------------*/
+
+@media (max-width:600px){
+
+   .footer-pagina{
+    position: relative;
+    left: 100px;
+
+     
+
+   }
+
+    
+
+}
+
+
 @media (max-width:800px){
     .textos{
         margin-left: 10rem;
@@ -113,6 +130,8 @@ body{
         font-weight: 900;
      
     }
+
+   
 
 .logo-footer img{
     width: 30px;
@@ -135,14 +154,17 @@ body{
 
 .footer-pagina{
     height: 50px;
+   
 }
 }
 
-@media (min-width:650px){
+@media (min-width:750px){
 
     .numeros{
         display: inline;
     }
+
+  
 }
 
    

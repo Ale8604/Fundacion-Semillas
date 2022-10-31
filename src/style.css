@@ -1,0 +1,381 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: #15171A;
+}
+.contenedor-1{
+    display: block;
+    width: 55rem;
+}
+.fondo img{
+    width: 140px;
+    height: 140px;
+    border: 1px solid #69BF97;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 2px 2px 2px rgb(72, 187, 97);
+    border-radius: 50%;
+}
+.contenedor .nombre{
+    
+    color: #fff;
+   margin-left: 15px;
+    width: 100px;
+}
+.contenedor{
+    background-color: #202528;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+/*parte del circulo animado*/
+
+.circulo h2{
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 200px;
+    color: #fff;
+}
+
+.alumno{
+    margin-top: 50px;
+    width: 200px;
+   margin-right: 50px;
+} 
+.alumno h2{
+    position: relative;
+    right: 20px;
+    color: #fff;
+}
+/*medidas del logo*/
+.logo img{
+    width: 5em;
+    height: 5em;
+    margin: 30px 10px;
+}
+/*-------------progreso de los alumnos---------------------*/
+.emocional{
+    display: block;
+}
+.semanas{
+    margin: 20px 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px rgb(15, 15, 15);
+    background-color: #202528;
+    width: 800px;
+    height: 300px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.semanas h2{
+    color: #fff;
+    text-align: center;
+}
+.semanas ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.semanas li{
+    margin: 20px 20px;
+    color: #fff;
+}
+/*-----------------------contenedores de los progresos cajas -------------------*/
+.progreso {
+    margin: 10px 15px;
+    width: 50px;
+    height: 150px;
+    background-color:#FF0000;
+}
+.progreso-2{
+    margin: 10px 15px;
+    width: 50px;
+    margin-top: 30px;
+    height: 130px;
+    background-color:#F33333;
+    
+}
+
+.progreso-3{
+    margin: 10px 15px;
+    width: 50px;
+    margin-top: 45px;
+    height: 115px;
+    background-color:#E34E4E;
+    
+}
+
+.progreso-4{
+    margin: 10px 15px;
+    width: 50px;
+    margin-top: 66px;
+    height: 95px;
+    background-color:#E56666;
+    
+}
+
+.progreso-5{
+    margin: 10px 15px;
+    width: 50px;
+    margin-top: 90px;
+    height: 73px;
+    background-color:#F08282;
+    
+}
+/*medidas de los porcentajes de las cajas rojas*/
+ span{
+    margin: 0px 20px;
+    text-align: center;
+    color: #A2A2A2;
+    font-weight: 900;
+}
+/*------------------ segunda seccion de los 3 circulos juntos-----------------*/
+
+.circulo-1{
+    background-color: #8E8E8E;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/*medidas de los 3 circulos con clase container*/
+ /*-----------------circulosss-------------*/
+ .all{
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+  
+   
+    
+}
+.container{
+    margin: 10px 20px;
+    border-radius: 20px;
+    background-color: #202528;
+    box-shadow: 15px 15px 15px rgb(15, 15, 15);
+    width: 200px;
+    height: 230px;
+
+}
+.inside-circle h2{
+    font-size: 10px;
+    width: 300px;
+  position: relative;
+  bottom: 10px;
+  right: 95px;
+  text-transform: uppercase;
+    
+}
+
+
+
+
+/*---------------------medidas para escritorio----------------------------------------*/
+
+@media (min-width:768px){
+    .contenedor{
+        display: block;
+        flex-wrap: wrap;
+        padding:5px 10px;
+   
+    
+    }
+    .contenedor-1{
+        display: flex;
+    }
+    .circulo{
+        margin-top: 10rem;
+      
+     
+    }
+    .fondo{
+        margin-left: 40px;
+      
+    }
+    .logo img{
+        width: 8em;
+        height: 8em;
+        margin: 4rem 0px;
+        margin-left: 60px;
+    }
+
+   
+    .contenedor .nombre{
+    
+        color: #fff;
+        margin-left: 30px;
+        width: 100px;
+    }
+    /*medidas de los 3 circulos del medio */
+      .all{margin-right: 15rem;
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+    }
+    .container{
+        margin: 10px 20px;
+        width: 240px;
+        height: 250px;
+
+    }
+    .inside-circle h2{
+      right: 90px;
+      font-size: 15px;
+   
+        
+    }
+}
+   
+    /* primer circulo de 20%*/
+    .mask .fill-2 {
+        clip: rect(0px, 75px, 150px, 0px);
+        background-color: #298907;
+      }
+      
+      .mask.full-2,
+      .circle .fill-2 {
+        animation: fill-2 ease-in-out 2s;
+        transform: rotate(40deg);
+      }
+      
+      @keyframes fill-2{
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(40deg);
+        }
+      }
+
+       /* segundo circulo de 80%*/
+
+
+       .mask .fill-3 {
+        clip: rect(0px, 75px, 150px, 0px);
+        background-color: #298907;
+      }
+      
+      .mask.full-3,
+      .circle .fill-3 {
+        animation: fill-3 ease-in-out 2s;
+        transform: rotate(130deg);
+      }
+      
+      @keyframes fill-3{
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(130deg);
+        }
+      }
+
+
+  
+
+
+      /*tercer circulo de 60%*/
+      .mask .fill-3 {
+        clip: rect(0px, 75px, 150px, 0px);
+        background-color: #298907;
+      }
+      
+      .mask.full-3,
+      .circle .fill-3 {
+        animation: fill-3 ease-in-out 2s;
+        transform: rotate(130deg);
+      }
+      
+      @keyframes fill-3{
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(130deg);
+        }
+      }
+
+
+
+
+    /*-----------------medidas----------*/
+    .circle-wrap {
+        display: grid;
+        grid-template-columns: repeat(1, 160px);
+        grid-gap: 80px;
+        margin-top: 35px;
+        margin-left: 50px;
+        width: 150px;
+        height: 150px;
+        background: #d9d7da;
+        border-radius: 50%;
+      }
+      
+      .circle-wrap .circle .mask,
+      .circle-wrap .circle .fill-1,
+      .circle-wrap .circle .fill-2,
+      .circle-wrap .circle .fill-3 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        border-radius: 50%;
+      }
+      
+      .circle-wrap .circle .mask {
+        clip: rect(0px, 150px, 150px, 75px);
+      }
+      
+      .circle-wrap .inside-circle {
+        width: 124px;
+        height: 124px;
+        border-radius: 50%;
+        background: #212020;
+        line-height: 120px;
+        text-align: center;
+        margin-top: 13px;
+        margin-left: 13px;
+        color: white;
+        position: absolute;
+        z-index: 100;
+        font-weight: 700;
+        font-size: 2em;
+      }
+      
+      /* color animation */
+      @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+      
+      .mask .fill-1 {
+        clip: rect(0px, 75px, 150px, 0px);
+        background-color: #298907;
+      }
+      
+      .mask.full-1,
+      .circle .fill-1 {
+        animation: fill-1 ease-in-out 3s;
+        transform: rotate(130deg);
+      }
+      
+      @keyframes fill-1 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(130deg);
+        }
+      }
+    
+
+
+
+
+
