@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+   font-family:'Inder', sans-serif ;
+    background: rgb(21, 23, 26);
+  
+  }
+
+.cont-nav{
+    display: flex;
+    color: white;
+    padding-top: 20px;
+}
+.row{
+    margin-top: 9%;
+    height: 5%;
+    text-align: right;
+    position: relative;
+    left: 10px;
+}
+
+.cont-nav h2{
+    margin-top: 8.4%;
+
+}
+.cont-nav h3{
+  font-weight: 600;
+  font-size: 1rem;
+
+}
+.cont-nav h4{
+  font-weight: 100;
+  color: grey;
+
+}
+
+.logo{
+   height: 15%;
+   margin-top: 3%;
+}
+
+.perfil{
+    width: 13%;
+    border-radius: 200px;
+    height: 20%;
+    margin-top: 7%;
+    margin-left:4% ;
+    border: solid 3px rgba(0, 126, 68, 1);
+}
+
+/*                                              seccion 1                                                 */
+
+  .all{
+    display: flex;
+    height: 100px;
+    position: relative;
+    left: 200px;
+    bottom: 250px;
+  }
+  .circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill-1,
+  .circle-wrap .circle .fill-2,
+  .circle-wrap .circle .fill-3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .circle-wrap .inside-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #212020;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: white;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  
+  /* color animation */
+  
+  .mask .fill-1 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #298907;
+  }
+  
+  .mask.full-1,
+  .circle .fill-1 {
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(133deg);
+  }
+  
+  @keyframes fill-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(133deg);
+    }
+  }
+
+.cont{
+  background-color: #212020;
+  color: white;
+  padding-left: 30px;
+  border-radius: 33px;
+  width: 430px;
+  margin: auto;
+  height: 220px;
+  margin-top: 20px;
+  }
+
+.cont img{
+  height: 90px;
+  width: 90px;
+  border-radius: 100px;
+  border: solid 4px green;
+  margin-top: 20px;
+}
+.cont h3{
+  font-weight: 100;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.mask .fill-2 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: green;
+}
+
+.mask.full-2,
+.circle .fill-2 {
+  animation: fill-2 ease-in-out 3s;
+  transform: rotate(117deg);
+}
+
+@keyframes fill-2{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(117deg);
+  }
+}
+.cont-progress{
+  position: relative;
+  bottom: 250px;
+  left: 200px;
+}
+.cont2{
+  position: relative;
+  right: 30px;
+  bottom: 50px;
+}
+.cont3{
+  position: relative;
+  right: 30px;
+  bottom: 30px;
+}
+ @media(min-width:480px) {
+  
+ }
+  
+
