@@ -1,0 +1,168 @@
+h3 {
+    font-size: clamp(10px,2vmin,20px);
+    font-weight:bolder;
+    line-height : 3.5vmin;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-size: clamp(8.5px,2vmin,20px);
+}
+
+
+/* CONTENEDOR PADRE*/
+.contenedor-padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.cont-4,
+.cont-5 {
+    width: 90%;
+    height: auto;
+    padding: 6vmin;
+    border-radius: 2vmin;
+    background-color: #202528;
+    margin-left: 50px;
+    margin-bottom: 6vmin;
+}
+.container-1{
+    margin-right: 15rem;
+}
+@media (min-width:768px){
+    .cont-4,
+    .cont-5 {
+        width: 72%;
+        height: auto;
+        padding: 6vmin;
+        margin-bottom: 2vmin;
+        margin-left: 30px;
+    }
+
+    .container-1{
+        margin-left: 20rem;
+        margin-bottom: 30px;
+    }
+    .cont-5 {
+        width: 72%;
+        height: auto;
+        padding: 6vmin;
+        margin-bottom: 2vmin;
+        margin-left: 30px;
+    }
+
+}
+
+#titulo {
+    padding-bottom: 5vmin;
+}
+
+#estado {
+    color: #737373;
+    font-weight: bold;
+}
+
+
+/*------------------- CONTENEDOR-4 -------------------*/
+/* Texto */
+
+.cont-4__contenedor_texto {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5vmin;
+}
+
+.cont-4__contenedor_texto__porcent {
+    color: #A2A2A2;
+}
+
+.cont-4__contenedor_barra {
+    position: relative;
+    border: 1px solid #A2A2A2;
+    border-radius: 10px;  
+    margin-bottom: 5vmin;
+}
+
+.cont-4__contenedor_barra div {
+    position: relative;
+    width: 0%;
+    height: 2vmin;
+    border-radius: 10px;
+}
+
+/* Barra - Estado desanimado*/
+#desanimado {
+    animation: desanimado-barra 2s forwards;
+    background-color: #EFE271;
+}
+
+@keyframes desanimado-barra{
+    100%{width: 50%;}
+}
+
+/* Barra - Estado feliz*/
+#feliz {
+    animation: feliz-barra 2s forwards;
+    background-color: #FF9900;
+}
+
+@keyframes feliz-barra{
+    100%{width: 75%;}
+}
+
+/* Barra - Estado desanimado*/
+#triste {
+    animation: triste-barra 2s forwards;
+    background-color: #6681E2;
+}
+
+@keyframes triste-barra{
+    100%{width: 25%;}
+}
+
+
+/*------------------- CONTENEDOR-5 -------------------*/
+.cont-5__listado {
+    display: flex;
+    justify-content: space-between;
+    height: 35%;
+    align-items: center;
+    background-color: #202528;
+    margin-bottom: 1vmin;
+}
+
+.cont-5__listado__nombre {
+    color: white;
+}
+
+.cont-5__listado__estado {
+    display: flex;
+    align-items: center;
+    gap: 3vmin;
+    width: 40%;
+    text-align: center;
+}
+
+.cont-5__listado__estado__emoji {
+    font-size: 5vmin;
+    animation: palpitar 2s linear infinite alternate;
+    will-change: transform;
+}
+
+@keyframes palpitar {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(0deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}

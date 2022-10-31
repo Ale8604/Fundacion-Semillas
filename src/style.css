@@ -10,7 +10,9 @@ body{
 .contenedor-1{
     display: block;
     width: 55rem;
+    height: auto;
 }
+
 .fondo img{
     width: 140px;
     height: 140px;
@@ -64,6 +66,7 @@ body{
 }
 .semanas{
     margin: 20px 10px;
+    margin-left: 40px;
     padding: 10px 20px;
     border-radius: 20px;
     box-shadow: 15px 15px 15px rgb(15, 15, 15);
@@ -178,6 +181,7 @@ body{
 
 
 
+
 /*---------------------medidas para escritorio----------------------------------------*/
 
 @media (min-width:768px){
@@ -185,11 +189,13 @@ body{
         display: block;
         flex-wrap: wrap;
         padding:5px 10px;
+        
    
     
     }
     .contenedor-1{
         display: flex;
+    height: 78em;
     }
     .circulo{
         margin-top: 10rem;
@@ -203,7 +209,7 @@ body{
     .logo img{
         width: 8em;
         height: 8em;
-        margin: 4rem 0px;
+        margin: 13rem 0px;
         margin-left: 60px;
     }
 
@@ -215,7 +221,10 @@ body{
         width: 100px;
     }
     /*medidas de los 3 circulos del medio */
-      .all{margin-right: 15rem;
+      .all
+      {margin-right: 15rem;
+        position: relative;
+        right: 13px;
         display: flex;
         justify-content: space-evenly;
         
@@ -223,6 +232,7 @@ body{
     }
     .container{
         margin: 10px 20px;
+       
         width: 240px;
         height: 250px;
 
@@ -233,7 +243,12 @@ body{
    
         
     }
+    .semanas{
+        margin-left: 20px;}
 }
+
+    /*----------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------*/
    
     /* primer circulo de 20%*/
     .mask .fill-2 {
@@ -256,31 +271,6 @@ body{
         }
       }
 
-       /* segundo circulo de 80%*/
-
-
-       .mask .fill-3 {
-        clip: rect(0px, 75px, 150px, 0px);
-        background-color: #298907;
-      }
-      
-      .mask.full-3,
-      .circle .fill-3 {
-        animation: fill-3 ease-in-out 2s;
-        transform: rotate(130deg);
-      }
-      
-      @keyframes fill-3{
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(130deg);
-        }
-      }
-
-
-  
 
 
       /*tercer circulo de 60%*/
@@ -362,7 +352,7 @@ body{
       .mask.full-1,
       .circle .fill-1 {
         animation: fill-1 ease-in-out 3s;
-        transform: rotate(130deg);
+        transform: rotate(150deg);
       }
       
       @keyframes fill-1 {
@@ -370,7 +360,7 @@ body{
           transform: rotate(0deg);
         }
         100% {
-          transform: rotate(130deg);
+          transform: rotate(150deg);
         }
       }
     
