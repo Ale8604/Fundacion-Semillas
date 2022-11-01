@@ -3,13 +3,10 @@
     margin: 0;
     
 }
-html{
-  overflow-x: hidden;
-}
 body {
    font-family:'Inder', sans-serif ;
     background: rgb(21, 23, 26);
-    
+    overflow-y: hidden important!;
   }
 
 .cont-nav{
@@ -193,27 +190,59 @@ body {
       width: 4rem;
       height: 4rem;
       margin-top: 30px;
-      left: 80%;
+      left: 33rem;
       position: absolute;
     }
     .logo{
       height: 100px;
       margin-top: 0px;
-      padding-left: 30px;
+      padding-left: 10px;
     }
     .cont-nav h3{
      position: relative;
-     left: 12rem;
+     left: 7rem;
      bottom: 20px;
     }
     .cont-nav h4{
       position: relative;
-      left: 12rem;
+      left: 7rem;
       bottom: 20px;
      }
      .cont-cart{
-        margin-right: 30px;
+        margin-right:90px;
      }
  }
-  
 
+@media (min-width:1024px) {
+  .logo{
+    height: 130px;
+  }
+  .perfil{
+    width: 70px;
+    height: 70px;
+    left: 370px;
+    top: 30px;
+    position: relative;
+  }
+  .cont-nav h3{
+    left: 24rem;
+  }
+  .cont-nav h4{
+    left: 24rem;
+  }
+  .cont{
+    margin: 50px 10px;
+  }
+  .cont2{
+    left: 28rem;
+    bottom: 14.7rem;
+  }
+  .cont3{
+    bottom: 15rem;
+    left: 12rem;
+  }
+  .all{
+    height: 0px;
+  }
+
+}

@@ -1,138 +1,232 @@
-
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+:root {
+    --espacio-entre-elementos: 24px;
+    --fondo-oscuro: #15171A;
+    --fondo-semi-oscuro: #202528;
+    --borde: 32px;
+    
 }
 
-body{
-    background-color: #15171A;
+* {
+    margin: 0;
+    color: #fff;
+}
+
+/*
+    Estructura o cuerpo de la pagina y sus elementos principales
+*/
+body {
+    display: flex;
+}
+
+aside {
+    min-width: 250px;
+    background-color: var(--fondo-semi-oscuro);
+    padding: var(--espacio-entre-elementos);
+}
+
+main {
+    display: flex;
+    justify-content: center;
     width: 100%;
+    background-color: var(--fondo-oscuro);
+    padding: var(--espacio-entre-elementos);
 }
 
-h3 {
-    font-size: clamp(10px,2vmin,20px);
-    font-weight:bolder;
-    line-height : 3.5vmin;
-    color: white;
-    text-align: center;
+section {
+    padding: var(--espacio-entre-elementos);
+    border-radius: var(--borde);
+    background-color: var(--fondo-semi-oscuro);
 }
 
-p {
-    font-size: clamp(8.5px,2vmin,20px);
+.aside-interno {
+    margin-left: var(--espacio-entre-elementos);
+}
+
+/*
+    Estilos para manipular los espacios alrededor de un elemento en especifico
+    mayormente, debe ser un hijo que tiene varios hermanos dentro de un elemento padre
+*/
+.espacio-abajo-x1 {
+    margin-bottom: var(--espacio-entre-elementos);
+}
+
+.espacio-vertical-x1 {
+    margin: var(--espacio-entre-elementos) 0;
+}
+
+.espacio-vertical-x3 {
+    margin: calc(var(--espacio-entre-elementos) * 3) 0;
+}
+
+.espacio-horizontal-x1 {
+    margin: 0 var(--espacio-entre-elementos);
+}
+
+.espacio-izquierda-x1 {
+    margin-left: var(--espacio-entre-elementos);
 }
 
 
-/* CONTENEDOR PADRE*/
-.contenedor-padre {
+/*
+    Estilos aplicados a los padres que se encargan de posicionar sus elementos hijos
+*/
+.separados-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.centrar-vertical {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
-    width: 100%;
-    max-width: 800px;
 }
 
+/*
+    Estilos aplicados a las imagenes
+*/
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
 
-/*------------------- CONTENEDOR-1 -------------------*/
-.cont-1 {
-    display: flex;
+.icono {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: lightgray;
+}
+
+.logo {
+    width: 150px;
     height: auto;
-    width: 100%;
-    background-color: #202528;
-    margin-bottom: 6vmin;
 }
 
-/* Seccion perfil */
-.cont-1__img {
+/*
+    Estilos aplicados a los textos
+*/
+.texto-centrado {
+    text-align: center;
+}
+
+.nombre-responsive {
+    display: none;
+}
+
+/*
+    Estilos para la grafica vertical
+*/
+.contenedor-de-graficas-verticales {
+    width: 80%;
+}
+
+.grafica-vertical {
+    width: 50px;
+    height: 150px;
+    background-color:#FF0000;
+}
+.grafica-vertical-2{
+    width: 50px;
+    margin-top: 25px;
+    height: 130px;
+    background-color: #F33333;
+}
+.grafica-vertical-3{
+    width: 50px;
+    margin-top: 35px;
+    height: 110px;
+    background-color: #E34E4E;
+}
+.grafica-vertical-4{
+    width: 50px;
+    margin-top: 47px;
+    height: 95px;
+    background-color: #E56666;
+}
+.grafica-vertical-5{
+    width: 50px;
+    margin-top: 60px;
+    height: 80px;
+    background-color: #F08282;
+}
+
+/*
+    Estilos para la grafica de progreso
+*/
+.barra-progreso {
+    height: 30px;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+    margin: 0 var(--espacio-entre-elementos);
     overflow: hidden;
 }
 
-.cont-1__img, 
-.cont-1__logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4vmin;
+.barra-progreso-relleno {
+    width: 10%;
+    background-color: #EFE271;
+    height: 100%;
+    border-radius: inherit;
 }
 
-.cont-1__img h3,
-.cont-1__grafico h3 {
-    text-align: center;
-    margin-top: 3vmin;
-}
-
-.cont-1__grafico,
-.cont-1__img {
-    width: 25%;
-    position: relative;
-}
-
-#perfil {
+.barra-progreso-relleno-2 {
     width: 70%;
-    border-radius: 100%;
-    border: 0.5vmin solid #69BF97;
-    transition: 0.5s;
+    background-color: #FF9900;
+    height: 100%;
+    border-radius: inherit;
 }
 
-#perfil:hover{
-    transform: scale(1.5);
+.barra-progreso-relleno-3 {
+    width: 20%;
+    background-color: #6681E2;
+    height: 100%;
+    border-radius: inherit;
 }
 
-/* Seccion grafica redonda */
-.cont-1__grafico {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.grafico {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    aspect-ratio: 1;
-}
 
-.grafico p {
-    color: white;
-    z-index: 10;
+/*
+    Estos son los estilos para la grafica de dona.
+*/
+.contenedor-grafica-dona {
+    width: fit-content;
 }
 
 .circle-wrap {
-    top: 10%;
-    left: 20%;
-    position: absolute;
-    width: 15vmin;
-    height: 15vmin;
-    background: #A2A2A2;
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da;
     border-radius: 50%;
-    transform: scale(0.8);
 }
-
+  
 .circle-wrap .circle .mask,
-.circle-wrap .circle .fill-1 {
-    width: 15vmin;
-    height: 15vmin;
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3,
+.circle-wrap .circle .fill-4 {
+    width: 150px;
+    height: 150px;
     position: absolute;
     border-radius: 50%;
 }
-
+  
 .circle-wrap .circle .mask {
-    clip: rect(0px, 15vmin, 15vmin, 7.5vmin);
+    clip: rect(0px, 150px, 150px, 75px);
 }
-
+  
 .circle-wrap .inside-circle {
-    width: 12.4vmin;
-    height: 12.4vmin;
+    width: 124px;
+    height: 124px;
     border-radius: 50%;
     background: #212020;
     line-height: 120px;
     text-align: center;
-    margin-top: 1.3vmin;
-    margin-left: 1.3vmin;
+    margin-top: 13px;
+    margin-left: 13px;
     color: white;
     position: absolute;
     z-index: 100;
@@ -141,245 +235,88 @@ p {
 }
 
 /* color animation */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
 
+      
 .mask .fill-1 {
-    clip: rect(0px, 7.5vmin, 15vmin, 0px);
-    background-color: #298907;
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #298907;
 }
 
 .mask.full-1,
 .circle .fill-1 {
-    animation: fill-1 ease-in-out 3s;
-    transform: rotate(90deg);
+  animation: fill-1 ease-in-out 3s;
+  transform: rotate(150deg);
 }
 
 @keyframes fill-1 {
-    0% {
+  0% {
     transform: rotate(0deg);
-    }
-    100% {
-    transform: rotate(90deg);
-    }
+  }
+  100% {
+    transform: rotate(150deg);
+  }
 }
 
-/* Seccion logo semillas */
-.cont-1__logo {
-    width: 50%;
-    align-items: flex-end;
-    padding-right: 5vmin;
-}
-
-#logo {
-    width: 45%;
-}
-
-/*------------------- CONTENEDOR-2 -------------------*/
-.cont-2,
-.cont-3,
-.cont-4,
-.cont-5 {
-    width: 90%;
-    height: auto;
-    padding: 6vmin;
-    border-radius: 2vmin;
-    background-color: #202528;
-    margin-bottom: 6vmin;
-}
-
-#titulo {
-    padding-bottom: 5vmin;
-}
-
-#estado,
-.cont-2__dia__porcent {
-    color: #737373;
-    font-weight: bold;
-}
-
-.cont-2__dia__dia,
-.cont-4__contenedor_texto__estado
-{
-    color: white;
-    font-weight:bolder;
-}
-
-.cont-2__grafica {
-    display: flex;
-    gap: 7vmin;
-    justify-content: center;
-    align-items: center;
-}
-
-.cont-2__dia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cont-2__dia__barra {
-    height: 20vmin;
-    width: 8vmin;
-    margin: 1vmin 0;
-    position: relative;
-    transform: rotate(180deg);
-}
-
-.cont-2__dia__barra div {
-    position: relative;
-    height: 0%;
-    width: 8vmin;
-    background-color: #202528;
-}
-
-/* Barra - 100%*/
-#cien {
-    animation: cien-barra 2s forwards;
-    background-color: #FF0000;
-}
-
-@keyframes cien-barra{
-    100%{height: 100%;}
-}
-
-/* Barra - 80%*/
-#ochenta {
-    animation: ochenta-barra 2s forwards;
-    background-color: #F33333;
-}
-
-@keyframes ochenta-barra{
-    100%{height: 80%;}
-}
-
-/* Barra - 60%*/
-#sesenta {
-    animation: sesenta-barra 2s forwards;
-    background-color: #E34E4E;
-}
-
-@keyframes sesenta-barra{
-    100%{height: 60%;}
-}
-
-/* Barra - 40%*/
-#cuarenta {
-    animation: cuarenta-barra 2s forwards;
-    background-color: #E56666;
-}
-
-@keyframes cuarenta-barra{
-    100%{height: 40%;}
-}
-
-/* Barra - 20%*/
-#veinte {
-    animation: veinte-barra 2s forwards;
-    background-color: #F08282;
-}
-
-@keyframes veinte-barra{
-    100%{height: 20%;}
-}
-
-/*------------------- CONTENEDOR-3 -------------------*/
-.cont-3 {
-    background-color: rgb(83, 0, 17);
-}
-
-/*------------------- CONTENEDOR-4 -------------------*/
-/* Texto */
-.cont-4__contenedor_texto {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.5vmin;
-}
-
-.cont-4__contenedor_texto__porcent {
-    color: #A2A2A2;
-}
-
-.cont-4__contenedor_barra {
-    position: relative;
-    border: 1px solid #A2A2A2;
-    border-radius: 10px;  
-    margin-bottom: 5vmin;
-}
-
-.cont-4__contenedor_barra div {
-    position: relative;
-    width: 0%;
-    height: 2vmin;
-    border-radius: 10px;
-}
-
-/* Barra - Estado desanimado*/
-#desanimado {
-    animation: desanimado-barra 2s forwards;
-    background-color: #EFE271;
-}
-
-@keyframes desanimado-barra{
-    100%{width: 50%;}
-}
-
-/* Barra - Estado feliz*/
-#feliz {
-    animation: feliz-barra 2s forwards;
-    background-color: #FF9900;
-}
-
-@keyframes feliz-barra{
-    100%{width: 75%;}
-}
-
-/* Barra - Estado desanimado*/
-#triste {
-    animation: triste-barra 2s forwards;
-    background-color: #6681E2;
-}
-
-@keyframes triste-barra{
-    100%{width: 25%;}
-}
-
-
-/*------------------- CONTENEDOR-5 -------------------*/
-.cont-5__listado {
-    display: flex;
-    justify-content: space-between;
-    height: 35%;
-    align-items: center;
-    background-color: #202528;
-    margin-bottom: 1vmin;
-}
-
-.cont-5__listado__nombre {
-    color: white;
-}
-
-.cont-5__listado__estado {
-    display: flex;
-    align-items: center;
-    gap: 3vmin;
-    width: 40%;
-    text-align: center;
-}
-
-.cont-5__listado__estado__emoji {
-    font-size: 5vmin;
-    animation: palpitar 2s linear infinite alternate;
-    will-change: transform;
-}
-
-@keyframes palpitar {
+/*------primer circulo*/
+.mask .fill-2 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #298907;
+  }
+  
+  .mask.full-2,
+  .circle .fill-2 {
+    animation: fill-2 ease-in-out 3s;
+    transform: rotate(40deg);
+  }
+  
+  @keyframes fill-2 {
     0% {
-        transform: rotate(0deg) scale(1);
-    }
-    50% {
-        transform: rotate(0deg) scale(1.1);
+      transform: rotate(0deg);
     }
     100% {
-        transform: rotate(0deg) scale(1);
+      transform: rotate(40deg);
     }
-}
+  }
+
+  /*------segundo circulo*/
+.mask .fill-3 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #298907;
+  }
+  
+  .mask.full-3,
+  .circle .fill-3 {
+    animation: fill-3 ease-in-out 3s;
+    transform: rotate(160deg);
+  }
+  
+  @keyframes fill-3 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(160deg);
+    }
+  }
+
+   /*------tercers circulo*/
+.mask .fill-4 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #298907;
+  }
+  
+  .mask.full-4,
+  .circle .fill-4 {
+    animation: fill-4 ease-in-out 3s;
+    transform: rotate(120deg);
+  }
+  
+  @keyframes fill-4 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(120deg);
+    }
+  }
