@@ -231,15 +231,17 @@ body {
     left: 24rem;
   }
   .cont{
-    margin: 50px 10px;
+    margin: 50px 12px;
   }
   .cont2{
     left: 28rem;
     bottom: 14.7rem;
   }
   .cont3{
-    bottom: 15rem;
-    left: 12rem;
+    bottom: 15.5rem;
+    margin-left: 0px;
+
+
   }
   .all{
     height: 0px;
