@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #15171A;
+    width: 100%;
+}
+
+h3 {
+    font-size: clamp(10px,2vmin,20px);
+    font-weight:bolder;
+    line-height : 3.5vmin;
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+p {
+    font-size: clamp(8.5px,2vmin,20px);
+}
+
+/* CONTENEDOR PADRE*/
+.contenedor-padre {
+    margin: auto;
+    width: 100vw;
+    max-width: 2227px;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    grid-gap: 2vmin;
+    grid-template-columns: 2.5fr 1.5fr;
+    grid-template-rows: 0.7fr 1.5fr 2fr 0.2fr;
+    grid-template-areas: "header header" 
+                        "cont-1 cont-2"
+                        "cont-3 cont-4"
+                        "footer footer";
+}
+
+.contenedor-padre .header {
+    background-color: aqua;
+    grid-area: header;
+}
+
+.contenedor-padre .cont-1 {
+    background-color: aqua;
+    grid-area: cont-1;
+}
+
+.contenedor-padre .cont-2 {
+    background-color: aqua;
+    grid-area: cont-2;
+}
+
+.contenedor-padre .cont-3 {
+    background-color: aqua;
+    grid-area: cont-3;
+}
+
+.contenedor-padre .cont-4 {
+    background-color: aqua;
+    grid-area: cont-4;
+}
+
+.contenedor-padre .footer {
+    background-color: rgb(183, 0, 255);
+    grid-area: footer;
+}
