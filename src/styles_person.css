@@ -478,3 +478,84 @@ p {
     transform: rotate(36deg);
     }
 }
+
+@media (min-width:801px) {
+
+    /* CONTENEDOR PADRE*/
+    .contenedor-padre {
+        max-width: 2227px;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-gap: 3vmin;
+        grid-template-columns: 1.3fr 2fr 1.3fr;
+        grid-template-rows: 1.3fr 1fr 1fr;
+        grid-template-areas: "nombre progreso listado" 
+                            "nombre porcentaje listado"
+                            "nombre estado listado";
+    }
+
+    /*------------------- CONTENEDOR-1 -------------------*/
+    .cont-1,
+    .cont-2,
+    .cont-3,
+    .cont-4,
+    .cont-5  {
+        margin-bottom: 0px;
+        width: 100%;
+        margin-bottom:0vmin;
+    }
+
+    .cont-2,
+    .cont-4,
+    .cont-5 {
+        padding: 3vmin;
+    }
+
+
+    #titulo {
+        padding-bottom: 4vmin;
+    }
+
+    .contenedor-padre .cont-1 {
+        grid-area: nombre;
+    }
+
+
+    .contenedor-padre .cont-4 {
+        grid-area: estado;
+        margin-bottom: 3vmin;
+    }
+
+    .cont-4__contenedor_barra { 
+        margin-bottom: 3vmin;
+    }
+
+    .contenedor-padre .cont-2 {
+        grid-area: progreso;
+        margin-top: 3vmin;
+    }
+
+    .contenedor-padre .cont-3 {
+        grid-area: porcentaje;
+    }
+
+    .contenedor-padre .cont-5 {
+        grid-area: listado;
+
+    }
+
+    .cont-5__listado {
+        margin-bottom: 3vmin;
+    }
+
+    .cont-5__listado__estado {
+        width: 15%;
+    }
+
+    #estado {
+        visibility: hidden;
+        display: none;
+}
+
+}
