@@ -94,7 +94,6 @@ p {
     align-items: center;
     width: 13vmin;
     aspect-ratio: 1;
-    background-color: #6681E2;
     position: relative;
 }
 
@@ -174,7 +173,6 @@ p {
 
 /*------------------- CONTENEDOR-2 -------------------*/
 .cont-2,
-.cont-3,
 .cont-4,
 .cont-5 {
     width: 90%;
@@ -282,7 +280,81 @@ p {
 
 /*------------------- CONTENEDOR-3 -------------------*/
 .cont-3 {
-    background-color: rgb(83, 0, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 6vmin;
+    gap: 3vmin;
+}
+
+.cont-3__contenedor1,
+.cont-3__contenedor2,
+.cont-3__contenedor3 {
+    width: 25%;
+    height: auto;
+    padding: 3vmin;
+    border-radius: 2vmin;
+    background-color: #202528;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cont-3 p {
+    text-align: center;
+    color: white;
+}
+
+
+/*Grafica 1 */
+.cont-3__contenedor1 .mask.full-1,
+.cont-3__contenedor1 .circle .fill-1 {
+    animation: fill-3-1 ease-in-out 3s;
+    transform: rotate(36deg);
+}
+
+@keyframes fill-3-1 {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(36deg);
+    }
+}
+
+/*Grafica 2 */
+.cont-3__contenedor2 .mask.full-1,
+.cont-3__contenedor2 .circle .fill-1 {
+    animation: fill-3-2 ease-in-out 3s;
+    transform: rotate(144deg);
+}
+
+@keyframes fill-3-2 {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(144deg);
+    }
+}
+
+/*Grafica 3 */
+.cont-3__contenedor3 .mask.full-1,
+.cont-3__contenedor3 .circle .fill-1 {
+    animation: fill-3-3 ease-in-out 3s;
+    transform: rotate(90deg);
+}
+
+@keyframes fill-3-3 {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(90deg);
+    }
 }
 
 /*------------------- CONTENEDOR-4 -------------------*/
@@ -405,81 +477,4 @@ p {
     100% {
     transform: rotate(36deg);
     }
-}
-
-
-@media (min-width:801px) {
-
-    /* CONTENEDOR PADRE*/
-    .contenedor-padre {
-        max-width: 2227px;
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-gap: 3vmin;
-        grid-template-columns: 1.3fr 2fr 1.3fr;
-        grid-template-rows: 1.3fr 1fr 1fr;
-        grid-template-areas: "nombre progreso listado" 
-                            "nombre porcentaje listado"
-                            "nombre estado listado";
-    }
-    
-    /*------------------- CONTENEDOR-1 -------------------*/
-    .cont-1,
-    .cont-2,
-    .cont-3,
-    .cont-4,
-    .cont-5  {
-        margin-bottom: 0px;
-        width: 100%;
-    }
-
-    .cont-2,
-    .cont-3,
-    .cont-4,
-    .cont-5 {
-        padding: 6vmin;
-    }
-
-
-    #titulo {
-        padding-bottom: 4vmin;
-    }
-
-    .contenedor-padre .cont-1 {
-        grid-area: nombre;
-    }
-
-    
-    .contenedor-padre .cont-4 {
-        grid-area: estado;
-        margin-bottom: 3vmin;
-    }
-
-    .cont-4__contenedor_barra { 
-        margin-bottom: 3vmin;
-    }
-    
-    .contenedor-padre .cont-2 {
-        grid-area: progreso;
-        margin-top: 3vmin;
-    }
-    
-    .contenedor-padre .cont-3 {
-        grid-area: porcentaje;
-    }
-    
-    .contenedor-padre .cont-5 {
-        grid-area: listado;
-    }
-
-    .cont-5__listado {
-        margin-bottom: 3vmin;
-    }
-
-    #estado {
-        visibility: hidden;
-        display: none;
-}
-
 }
