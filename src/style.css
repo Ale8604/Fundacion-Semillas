@@ -252,5 +252,27 @@ body {
   .all{
     height: 0px;
   }
+ 
 
+}
+@media (min-width:1441px){
+  .perfil{
+    width: 70px;
+    height: 70px;
+    left: 52rem;
+    top: 30px;
+    position: relative;
+  }
+  .cont-nav h3{
+    left: 54rem;
+    bottom: 3rem;
+  }
+  .cont-nav h4{
+    left: 54rem;
+    bottom: 3rem;
+  }
+  .cont-nav h2{
+    position: relative;
+    bottom: 2rem;
+  }
 }
