@@ -190,7 +190,7 @@ body {
       width: 4rem;
       height: 4rem;
       margin-top: 30px;
-      left: 33rem;
+      left: 39rem;
       position: absolute;
     }
     .logo{
@@ -200,16 +200,16 @@ body {
     }
     .cont-nav h3{
      position: relative;
-     left: 7rem;
+     left: 13rem;
      bottom: 20px;
     }
     .cont-nav h4{
       position: relative;
-      left: 7rem;
+      left: 13rem;
       bottom: 20px;
      }
      .cont-cart{
-        margin-right:90px;
+        margin-right:10px;
      }
  }
 
