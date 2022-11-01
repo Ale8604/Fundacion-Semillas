@@ -220,15 +220,21 @@ body {
   .perfil{
     width: 70px;
     height: 70px;
-    left: 370px;
+    left: 52rem;
     top: 30px;
     position: relative;
   }
   .cont-nav h3{
-    left: 24rem;
+    left: 54rem;
+    bottom: 3rem;
   }
   .cont-nav h4{
-    left: 24rem;
+    left: 54rem;
+    bottom: 3rem;
+  }
+  .cont-nav h2{
+    position: relative;
+    bottom: 2rem;
   }
   .cont{
     margin: 50px 12px;
