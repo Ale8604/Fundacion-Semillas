@@ -11,6 +11,7 @@ body{
     display: block;
     width: 55rem;
     height: auto;
+    margin: 0 auto;
 }
 
 .fondo img{
