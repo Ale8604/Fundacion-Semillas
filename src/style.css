@@ -1,11 +1,15 @@
 *{
     padding: 0;
     margin: 0;
+    
+}
+html{
+  overflow-x: hidden;
 }
 body {
    font-family:'Inder', sans-serif ;
     background: rgb(21, 23, 26);
-  
+    
   }
 
 .cont-nav{
@@ -23,17 +27,19 @@ body {
 
 .cont-nav h2{
     margin-top: 8.4%;
+    text-transform: uppercase;
 
 }
 .cont-nav h3{
   font-weight: 600;
   font-size: 1rem;
+  text-transform: uppercase;
 
 }
 .cont-nav h4{
   font-weight: 100;
   color: grey;
-
+  text-transform: uppercase;
 }
 
 .logo{
@@ -181,8 +187,33 @@ body {
   right: 30px;
   bottom: 30px;
 }
- @media(min-width:480px) {
-  
+
+@media(min-width:481px) {
+    .perfil{
+      width: 4rem;
+      height: 4rem;
+      margin-top: 30px;
+      left: 80%;
+      position: absolute;
+    }
+    .logo{
+      height: 100px;
+      margin-top: 0px;
+      padding-left: 30px;
+    }
+    .cont-nav h3{
+     position: relative;
+     left: 12rem;
+     bottom: 20px;
+    }
+    .cont-nav h4{
+      position: relative;
+      left: 12rem;
+      bottom: 20px;
+     }
+     .cont-cart{
+        margin-right: 30px;
+     }
  }
   
 
